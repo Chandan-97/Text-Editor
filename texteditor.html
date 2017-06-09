@@ -28,6 +28,7 @@
 			tf.document.execCommand(insertParagraph, false, null);
 		}
 		function execCmd(cmd, color){
+			tf.document.execCommand('styleWithCSS', false, true);	// Edit : ChandyShot
 			tf.document.execCommand(cmd, false, color);
 		}
 		function print_text(){
